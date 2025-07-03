@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Mobil Tarım Oyunu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Üst Barlar -->
+  <div id="top-bars" class="top-bars">
+    <div class="top-bar-item glass">
+      <img src="assets/images/icongold.png" class="top-bar-icon" />
+      <span id="gold-amount">100</span>
+    </div>
+    <div class="top-bar-item glass">
+      <img src="assets/images/iconenergy.png" class="top-bar-icon" id="energy-bar-icon"/>
+      <span id="energy-amount">50</span>
+    </div>
+    <div class="top-bar-item glass">
+      <img src="assets/images/icondiamond.png" class="top-bar-icon" />
+      <span id="diamond-amount">0</span>
+    </div>
+    <div class="top-bar-item glass">
+      <button id="settings-btn" class="settings-btn">
+        <img src="assets/images/iconsettings.png" class="top-bar-icon" />
+      </button>
+    </div>
+  </div>
+  <!-- Oyun UI -->
+  <div id="game-ui">
+    <!-- Harita Alanı -->
+    <div id="game-map" class="game-map"></div>
+    <div id="anim-layer"></div>
+    <!-- Alt Menü -->
+    <div id="bottom-menu" class="glass">
+      <button class="menu-btn glass" id="barn-btn">
+        <img src="assets/images/iconbarn.png" />
+      </button>
+      <button class="menu-btn glass" id="store-btn">
+        <img src="assets/images/iconstore.png" />
+      </button>
+      <button class="menu-btn glass" id="tasks-btn">
+        <img src="assets/images/icontasks.png" />
+      </button>
+      <button class="menu-btn glass" id="map-btn">
+        <img src="assets/images/iconmap.png" />
+      </button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
